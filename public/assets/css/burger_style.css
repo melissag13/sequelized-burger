@@ -1,0 +1,32 @@
+body {
+	background-image: url("/assets/img/space.jpg");
+	background-repeat: no-repeat;
+
+}
+
+p {
+	color: white;
+}
+#display {
+	color: white;
+}
+
+
+@font-face {
+    font-family: namco;
+    src: url("namco.ttf");
+}
+
+#font {
+	font-family: namco;
+	font-size: 50px;
+	color: #990000;
+
+}
+
+.container {
+	opacity: .80;
+}
+#burg {
+	padding-top: 25px;
+}
