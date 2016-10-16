@@ -1,8 +1,13 @@
+// Dependencies
+// Series of npm packages that we will use to give our server useful functionality
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override')
 var app = express();
 var PORT = process.env.PORT || 3000;
+var models = require("./models")
+
+models.sequelize.sync();
 
 app.use(express.static(__dirname + '/public'));
 
