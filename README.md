@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Space Burger
 
 ![alt tag](https://github.com/melissag13/burger/blob/master/public/assets/img/Screen%20Shot%202016-10-11%20at%209.24.46%20PM.png)
