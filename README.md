@@ -1,4 +1,4 @@
-#Space Burger
+#Sequelized Space Burger
 
 ![alt tag](https://github.com/melissag13/burger/blob/master/public/assets/img/Screen%20Shot%202016-10-11%20at%209.24.46%20PM.png)
 
@@ -12,8 +12,8 @@ A restaurant app that lets users input the names of burgers they'd like to eat. 
 * MySQL
 * Express.js
 * Node.js
+* Sequelize.js
 * MVC
-* ORM
 * npm packages: express, body-parser, express-handlebars, method-override, and mysql
 * Bootstrap 
 * Heroku
@@ -29,6 +29,4 @@ A restaurant app that lets users input the names of burgers they'd like to eat. 
 ###Deployed App:
 
 Heroku: 
-=======
-# sequelized-burger
->>>>>>> 81e2845fc4bf8ca1d4f410f74ead186473b09547
+
