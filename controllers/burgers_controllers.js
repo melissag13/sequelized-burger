@@ -69,15 +69,15 @@ var moment = require('moment');
 
 // Redirect the root route '/' to /burgers
 router.get('/', function(req, res) {
-    res.redirect('/burger');
+    res.redirect('/burgers');
 });
 
 // At the default /burgers route, use the burger model to retrieve all records
-router.get('/burger', function(req, res) {
+router.get('/burgers', function(req, res) {
     Burger.findAll()
-    .then(function(burgers) {
-        console.log(burgers);
-        return res.render('index', {burgers})
+    .then(function(burger_data) {
+        console.log(burger_data);
+        return res.render('index', {burger_data})
     });
 });
 
@@ -93,14 +93,14 @@ router.post('/burgers/create', function(req, res) {
 
 // This is the route used to update a record based on its id, it uses 'put' rather than
 // 'post' since it is an update
-router.put('/burger/update', function(req, res) {
+router.put('/burgers/update', function(req, res) {
 
     Burger.findOne({where:{id: req.body.burger_id}})
     .then(function(devourBurger) {
         return devourBurger.updateAttributes({
             devoured: true
         }).then(function() {
-            res.redirect('/burger');    
+            res.redirect('/burgers');    
         })
     });
 });
